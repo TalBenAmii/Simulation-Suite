@@ -20,8 +20,14 @@ cmake ..
 make
 ```
 ### On windows:
+if you do have make on windows you should use:
 ```bash
-
+mkdir build && cd build
+cmake .. -G "MinGW Makefiles"
+make
+```
+otherwise:
+```bash
 mkdir build && cd build
 cmake ..
 cmake --build . --config Release
